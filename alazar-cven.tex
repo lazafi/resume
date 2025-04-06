@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{wasysym}
@@ -30,7 +31,7 @@
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyfoot[R]{\tiny\thepage /\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -51,8 +52,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{0.5em}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{0.5em}]
+  \vspace{0.2em}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0.2em}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -69,7 +70,7 @@
  %\setlist[itemize]{noitemsep} 
 %\setlength{\itemsep}{-30pt}
 %\setlength\topsep{0pt}
-\setitemize{itemsep=0.5em,topsep=-25pt}
+\setitemize{itemsep=0.2em,topsep=-15pt}
 %setitemize{itemsep=3pt,topsep=0pt}
 
 %-------------------------
@@ -113,8 +114,11 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \newcommand{\resumeProject}[6]{
+%\needspace{10\baselineskip}
 \textbf{#2} & #5\\
+\nopagebreak
 #3& \textit{#4} \\
+\nopagebreak
 \multicolumn{2}{L{0.95\textwidth}}{
 \begin{itemize}
      \resumeItem #1
@@ -171,7 +175,7 @@
 \vspace{1pt}\\
 		\textbf{Federal Commercial Academy} &  \textit{Kitzb\"{u}hel, AT} \\
 
-	Higher education entrance qualification & 1994 -- 2000 \\ 
+	High School Diploma & 1994 -- 2000 \\ 
 \vspace{1pt}\\
 		\textbf{Dienes Val\`{e}ria Primary School} &  \textit{Szeksz\'{a}rd, HU} \\
 
@@ -218,7 +222,7 @@ AirTies & \textit{Istambul, TR} \\
 \begin{itemize}
 \item Safety Approval Services IEC 61508
 \item driving license B
-\item amateur radio license C
+%\item amateur radio license C
 \end{itemize}
 
 %-------------------------%
@@ -226,6 +230,7 @@ AirTies & \textit{Istambul, TR} \\
 \section{\bf Project History}
 \vspace{-1em}
 \begin{longtable}{L{0.70\textwidth} R{0.25\textwidth} R{0.05\textwidth}} 
+%\begin{longtable}{|L{0.70\textwidth}| R{0.25\textwidth} |R{0.05\textwidth}|} 
 
 \resumeProject
 {Online Search App}{Panasonic Electric Works Europe AG}{Frontend Developer}{Ottobrunn, DE}{2024}
@@ -243,87 +248,57 @@ AirTies & \textit{Istambul, TR} \\
      \resumeSubItem \textit{Java, Spring Boot, Grails, AWS, IOT, SQS, JMeter, SQL, postgreSQL, JPA, Python, MQTT}
 }
 
-
-\textbf{Software Developer} & 2013 -- 2017\\
-Wirtschaftshaus Service GmbH & \textit{Garbsen, DE} \\
-\begin{itemize}
-     \resumeItem Customer Relation Portal for real estate agents
+\resumeProject
+{Customer Relation Portal for real estate agents}{Wirtschaftshaus Service GmbH}{Software Developer}{Garbsen, DE}{2013 -- 2017}
+{
      \resumeSubItem development of Web and Mobile apps using Java technologies
      \resumeSubItem integration of legacy applications with Salesforce CRM
      \resumeSubItem customization of Salesforce with Apex
      \resumeSubItem integration of components into SSO using SAML
      \resumeSubItem \textit{Java, Apex, JSF, Spring, Salesforce, SSQL, Jasper, WSO Carbon, SAML }
-\end{itemize} &  \\
+}
 
-\textbf{Software Developer} & 2016 -- 2018\\
-Skagic GmbH & \textit{Hannover, DE} \\
-\begin{itemize}
-     \resumeItem AI Enabled Appointment Scheduling System
+\resumeProject
+{AI Enabled Appointment Scheduling System}{Skagic GmbH}{Software Developer}{Hannover, DE}{2016 -- 2018}
+{
 	 \resumeSubItem design of an event driven architecture using AWS Cloud
      \resumeSubItem design and implementation of RESTfull APIs
      \resumeSubItem setup of an federated authentication system
      \resumeSubItem \textit{Java, AWS, SQS, Google Calendar API, OAuth2}
-\end{itemize}  &  \\
+}
 
-\textbf{Software Developer} & 2017 -- 2018\\
-Ricoh Europe& \textit{Hannover, DE} \\
-\begin{itemize}
-     \resumeItem Web to Print Webapp
+\resumeProject
+{Web to Print Webapp}{Ricoh Europe}{Software Developer}{Hannover, DE}{2017 -- 2018}
+{
      \resumeSubItem design and development RESTfull APIs
 	 \resumeSubItem implementation of XSLT transformations
      \resumeSubItem \textit{Java, JSF, XSLT, XSLT-FO}
- \end{itemize} & \\
+}
 
-\textbf{Software Developer} & 2016 -- 2017\\
-Panasonic Electric Works Europe AG & \textit{Ottobrunn, DE} \\
-\begin{itemize}
-     \resumeItem warehouse management system
+\resumeProject
+{Warehouse Management System}{Panasonic Electric Works Europe AG}{Software Developer}{Ottobrunn, DE}{2016 -- 2017}
+{
      \resumeSubItem reverse engineering of legacy systems
 	 \resumeSubItem upgrade and integration of legacy software components
      \resumeSubItem \textit{Java, SQL, Oracle}
-\end{itemize} & \\
+}
 
-\textbf{Software Developer} & 2011 -- 2020\\
-Embasy of Belgium & \textit{Vienna, AT}\\
-\begin{itemize}
-     \resumeItem Event Management Portal
-     \resumeSubItem development of Joomla Modules and Extensions
+
+\resumeProject
+{Event Management Portal}{Embasy of Belgium}{Software Developer}{Vienna, AT}{2011 -- 2020}
+{
+    \resumeSubItem development of Joomla Modules and Extensions
 	 \resumeSubItem integration of a Newsletter System
-	 \resumeSubItem \textit{Php, Joomla, Symfony}
- \end{itemize} & \\
+	 \resumeSubItem \textit{Php, Joomla}
+ }
 
-\textbf{Software Architect/Developer} & 2010 -- 2015\\
-Aurifer Edelmetallrecycling & \textit{Vienna, AT}\\
-\begin{itemize}
-     \resumeItem ERP System for trading
+\resumeProject
+{ERP System for trading}{Aurifer Edelmetallrecycling}{Software Architect/Developer}{Vienna, AT}{2010 -- 2015}
+{
      \resumeSubItem Desing of a Distributed Architecture based on Message Oriented Middleware
 	 \resumeSubItem Development of a Rich Client Application
 	 \resumeSubItem \textit{Java, Spring, netBeans RCP, JMS, JPA}
- \end{itemize} & \\
-
-\textbf{Software Developer} & 2010 -- 2011\\
-Red Carpet Consulting & \textit{Vienna, AT}\\
-\begin{itemize}
-     \resumeItem Development of an backend API for an IPhone App
-     \resumeSubItem Web Data Extraction
-	 \resumeSubItem \textit{Java, XQuery/XSLT, RESTfull}
- \end{itemize} & \\
-
-\textbf{Research Assistant} & 2006 -- 2007\\
-Technical University Vienna & \textit{Vienna, AT}\\
-\begin{itemize}
-	 \resumeItem SafetyLON
-     \resumeSubItem Adaptation of the LonWorks bus system for safety critical applications
-	 \resumeSubItem \textit{c, ARM7}
- \end{itemize} & \\
-
-\textbf{Software Developer} & 2006\\
-AirTies Inc. & \textit{Istambul, TR} \\
-\begin{itemize}
-	 \resumeItem IPTV set-top-box
-     \resumeSubItem development of usb device drivers
-     \resumeSubItem \textit{C, Linux, USB}
- \end{itemize} & \\
+ }
 
 \end{longtable}
 
