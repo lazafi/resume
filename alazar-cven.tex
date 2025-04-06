@@ -1,0 +1,341 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{wasysym}
+\usepackage{float}
+%%\usepackage{fontawesome5}
+\input{glyphtounicode}
+\usepackage{longtable}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{needspace}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{0.5em}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0.5em}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% table
+
+
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength\LTleft{1em}
+\setlength\LTright{0em}
+
+% itemize
+ %\setlist[itemize]{noitemsep} 
+%\setlength{\itemsep}{-30pt}
+%\setlength\topsep{0pt}
+\setitemize{itemsep=0.5em,topsep=-25pt}
+%setitemize{itemsep=3pt,topsep=0pt}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}{
+  \item{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}{\resumeItem \vspace{-4pt} \small}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeProject}[6]{
+\textbf{#2} & #5\\
+#3& \textit{#4} \\
+\multicolumn{2}{L{0.95\textwidth}}{
+\begin{itemize}
+     \resumeItem #1
+	#6
+\end{itemize} 
+} \\
+}
+
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\tiny ++}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{2em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+%%\renewcommand{\namefont}{\large\textbf}
+
+
+%---------------------------------------------------------------------------
+ \Huge  \textbf{Attila F. L\'{a}z\'{a}r} \\
+ %%        \normalsize \hfill Born 06.20.1979 \\ \textit{Curriculum Vitae}\hfill
+        \normalsize Erdbergstra\ss{}e 46/2/34, 1030 Wien  \hfill  Born 06.20.1979\\
+		\hfill \texttt{attila.lazar@labro.at}  \\
+		\hfill \texttt{+43 1 996213411} \\
+        \par \normalsize \normalfont
+%%\section{Attila F. L\'{a}z\'{a}r}
+
+
+
+%%	Erdbergstra\ss{}e 46/2/34  &  Born 06.20.1979, in Cadca, SK\\
+%%	1030 Vienna  &  Telephone: +43 650 8714578 \\ 
+%%Austria  &  Email: \texttt{attila.lazar@labro.at} \\
+
+%-------------------------%
+
+\section{\bf Education}
+        	
+%		\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\vspace{-1em}
+\begin{longtable}{  L{0.70\textwidth}  R{0.25\textwidth}  R{0.05\textwidth }} 
+		\textbf{Technical University Vienna} &  \textit{Vienna, AT} \\
+
+%	MaS, Data Science &  expected 2026 \\ 
+%	MaS, Internet Computing and Software Engeneering &  expected 2025 \\ 
+	Bsc, Internet Computing and Software Engeneering & 2019 \\ 
+\vspace{1pt}\\
+		\textbf{Federal Commercial Academy} &  \textit{Kitzb\"{u}hel, AT} \\
+
+	Higher education entrance qualification & 1994 -- 2000 \\ 
+\vspace{1pt}\\
+		\textbf{Dienes Val\`{e}ria Primary School} &  \textit{Szeksz\'{a}rd, HU} \\
+
+	 & 1985 -- 1993 \\ 
+
+%\end{tabular*}
+\end{longtable}
+
+%-------------------------%
+
+\section{\bf Work Experience}
+\vspace{-1em}
+\begin{longtable}{  L{0.70\textwidth}  R{0.25\textwidth}  R{0.05\textwidth }} 
+\textbf{Solution Engineer, Founder} & 2010 -- \\
+Labro OG & \textit{Vienna, AT} \\
+\vspace{1pt}\\
+\textbf{Research Assitant} & 2006 -- 2007\\
+Technical University Vienna & \textit{Vienna, AT} \\
+\vspace{1pt}\\
+\textbf{Internship} & 2006\\
+AirTies & \textit{Istambul, TR} \\
+%\end{tabular*}
+\end{longtable}
+
+\section{\bf Technical Skills}
+\begin{itemize}
+\item \textbf{Core Competency:} Web Service Development, Database Design, Cloud Native Architectures
+\item \textbf{Programming Languages:} Java, TypeScript, Python, C/\Cplusplus, R, SQL, Apex, XSLT/XQuery, Php
+\item \textbf{DevOps Toolchain:} Maven, Jenkins, Git, Svn, ant, make
+\item \textbf{Operating Systems:} GNU/Linux, Windows
+\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, Grails, Netbeans RCP, Symphony, ReactJS, AngularJS, JSF, Junit
+\item \textbf{Cloud Providers:} AWS, Salesforce, MS Azure
+\item \textbf{Databases:} ProgreSQL, Oracle, MySQL, eXist-db 
+\item \textbf{Applications and Tools:} Docker, JBoss, Tomcat, Apache, Netbeans, Eclipse, VsCode, MsOffice, VisualParadigm, Jira, Confluence, Joomla, Apache FOP, JMeter, \LaTeX
+\end{itemize}
+
+\needspace{10\baselineskip}
+\section{\bf Other Skills}
+\begin{itemize}
+\item \textbf{Languages:} Hungarian(1), German(1), Slovak(1), English(2), Italian(4), Russian(5)
+\end{itemize}
+
+\section{\bf Certifications}
+\begin{itemize}
+\item Safety Approval Services IEC 61508
+\item driving license B
+\item amateur radio license C
+\end{itemize}
+
+%-------------------------%
+
+\section{\bf Project History}
+\vspace{-1em}
+\begin{longtable}{L{0.70\textwidth} R{0.25\textwidth} R{0.05\textwidth}} 
+
+\resumeProject
+{Online Search App}{Panasonic Electric Works Europe AG}{Frontend Developer}{Ottobrunn, DE}{2024}
+{
+     \resumeSubItem Development of React Components
+     \resumeSubItem \textit{TypeScript, ReactJS}
+}
+
+\resumeProject
+{Industrial IOT PaaS Application}{SH-Tools GmbH}{Software Architect/Developer}{Hannover, DE}{2019 -- 2022}
+{
+	 \resumeSubItem upgrade of a legacy application into an event-driven architecture based on AWS 
+     \resumeSubItem design of RESTfull APIs and development of Web Services
+	 \resumeSubItem database design and query optimization
+     \resumeSubItem \textit{Java, Spring Boot, Grails, AWS, IOT, SQS, JMeter, SQL, postgreSQL, JPA, Python, MQTT}
+}
+
+
+\textbf{Software Developer} & 2013 -- 2017\\
+Wirtschaftshaus Service GmbH & \textit{Garbsen, DE} \\
+\begin{itemize}
+     \resumeItem Customer Relation Portal for real estate agents
+     \resumeSubItem development of Web and Mobile apps using Java technologies
+     \resumeSubItem integration of legacy applications with Salesforce CRM
+     \resumeSubItem customization of Salesforce with Apex
+     \resumeSubItem integration of components into SSO using SAML
+     \resumeSubItem \textit{Java, Apex, JSF, Spring, Salesforce, SSQL, Jasper, WSO Carbon, SAML }
+\end{itemize} &  \\
+
+\textbf{Software Developer} & 2016 -- 2018\\
+Skagic GmbH & \textit{Hannover, DE} \\
+\begin{itemize}
+     \resumeItem AI Enabled Appointment Scheduling System
+	 \resumeSubItem design of an event driven architecture using AWS Cloud
+     \resumeSubItem design and implementation of RESTfull APIs
+     \resumeSubItem setup of an federated authentication system
+     \resumeSubItem \textit{Java, AWS, SQS, Google Calendar API, OAuth2}
+\end{itemize}  &  \\
+
+\textbf{Software Developer} & 2017 -- 2018\\
+Ricoh Europe& \textit{Hannover, DE} \\
+\begin{itemize}
+     \resumeItem Web to Print Webapp
+     \resumeSubItem design and development RESTfull APIs
+	 \resumeSubItem implementation of XSLT transformations
+     \resumeSubItem \textit{Java, JSF, XSLT, XSLT-FO}
+ \end{itemize} & \\
+
+\textbf{Software Developer} & 2016 -- 2017\\
+Panasonic Electric Works Europe AG & \textit{Ottobrunn, DE} \\
+\begin{itemize}
+     \resumeItem warehouse management system
+     \resumeSubItem reverse engineering of legacy systems
+	 \resumeSubItem upgrade and integration of legacy software components
+     \resumeSubItem \textit{Java, SQL, Oracle}
+\end{itemize} & \\
+
+\textbf{Software Developer} & 2011 -- 2020\\
+Embasy of Belgium & \textit{Vienna, AT}\\
+\begin{itemize}
+     \resumeItem Event Management Portal
+     \resumeSubItem development of Joomla Modules and Extensions
+	 \resumeSubItem integration of a Newsletter System
+	 \resumeSubItem \textit{Php, Joomla, Symfony}
+ \end{itemize} & \\
+
+\textbf{Software Architect/Developer} & 2010 -- 2015\\
+Aurifer Edelmetallrecycling & \textit{Vienna, AT}\\
+\begin{itemize}
+     \resumeItem ERP System for trading
+     \resumeSubItem Desing of a Distributed Architecture based on Message Oriented Middleware
+	 \resumeSubItem Development of a Rich Client Application
+	 \resumeSubItem \textit{Java, Spring, netBeans RCP, JMS, JPA}
+ \end{itemize} & \\
+
+\textbf{Software Developer} & 2010 -- 2011\\
+Red Carpet Consulting & \textit{Vienna, AT}\\
+\begin{itemize}
+     \resumeItem Development of an backend API for an IPhone App
+     \resumeSubItem Web Data Extraction
+	 \resumeSubItem \textit{Java, XQuery/XSLT, RESTfull}
+ \end{itemize} & \\
+
+\textbf{Research Assistant} & 2006 -- 2007\\
+Technical University Vienna & \textit{Vienna, AT}\\
+\begin{itemize}
+	 \resumeItem SafetyLON
+     \resumeSubItem Adaptation of the LonWorks bus system for safety critical applications
+	 \resumeSubItem \textit{c, ARM7}
+ \end{itemize} & \\
+
+\textbf{Software Developer} & 2006\\
+AirTies Inc. & \textit{Istambul, TR} \\
+\begin{itemize}
+	 \resumeItem IPTV set-top-box
+     \resumeSubItem development of usb device drivers
+     \resumeSubItem \textit{C, Linux, USB}
+ \end{itemize} & \\
+
+\end{longtable}
+
+%%\end{tabular*}
+
+%-------------------------%
+
+
+\begin{center}
+\vspace{\fill} \
+\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 11.03.2025$ $ }{\tiny \rm $ $Rev: 2.4$ $ }
+\end{center}
+
+
+\end{document}
