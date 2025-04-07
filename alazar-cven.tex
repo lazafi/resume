@@ -76,12 +76,14 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}{
-  \item{
-    {\vspace{-2pt}}
+  \vspace{-5pt}
+  \item[] \hspace*{-2em}{
+    {\vspace{0pt}}
   }
+  \vspace{2pt}
 }
 
-\newcommand{\resumeSubItem}{\resumeItem \vspace{-4pt} \small}
+\newcommand{\resumeSubItem}{ \item{\vspace{-2pt}} \vspace{-4pt} \small}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -115,12 +117,12 @@
 
 \newcommand{\resumeProject}[6]{
 %\needspace{10\baselineskip}
-\textbf{#2} & #5\\
+\textbf{#3} & #5\\
 \nopagebreak
-#3& \textit{#4} \\
+#2& \textit{#4} \\
 \nopagebreak
 \multicolumn{2}{L{0.95\textwidth}}{
-\begin{itemize}
+\begin{itemize}[label=$\triangleright$]
      \resumeItem #1
 	#6
 \end{itemize} 
@@ -171,13 +173,13 @@
 
 %	MaS, Data Science &  expected 2026 \\ 
 %	MaS, Internet Computing and Software Engeneering &  expected 2025 \\ 
-	Bsc, Internet Computing and Software Engeneering & 2019 \\ 
+	Bsc, Internet Computing and Software Engineering & 2019 \\ 
 \vspace{1pt}\\
 		\textbf{Federal Commercial Academy} &  \textit{Kitzb\"{u}hel, AT} \\
 
 	High School Diploma & 1994 -- 2000 \\ 
 \vspace{1pt}\\
-		\textbf{Dienes Val\`{e}ria Primary School} &  \textit{Szeksz\'{a}rd, HU} \\
+		\textbf{Dienes Val\'{e}ria Primary School} &  \textit{Szeksz\'{a}rd, HU} \\
 
 	 & 1985 -- 1993 \\ 
 
@@ -186,30 +188,34 @@
 
 %-------------------------%
 
-\section{\bf Work Experience}
+\section{\bf Professional Experience}
 \vspace{-1em}
 \begin{longtable}{  L{0.70\textwidth}  R{0.25\textwidth}  R{0.05\textwidth }} 
 \textbf{Solution Engineer, Founder} & 2010 -- \\
 Labro OG & \textit{Vienna, AT} \\
 \vspace{1pt}\\
-\textbf{Research Assitant} & 2006 -- 2007\\
+\textbf{Research Assistant} & 2006 -- 2007\\
 Technical University Vienna & \textit{Vienna, AT} \\
 \vspace{1pt}\\
 \textbf{Internship} & 2006\\
-AirTies & \textit{Istambul, TR} \\
+AirTies & \textit{Istanbul, TR} \\
 %\end{tabular*}
 \end{longtable}
 
 \section{\bf Technical Skills}
 \begin{itemize}
+       \setlength{\leftmargini}{0.5cm}    % Left margin
+        \setlength{\itemsep}{0.2em}       % Space between items
+        \setlength{\topsep}{5pt}         % Space before the list
+        \setlength{\partopsep}{10pt}      % Extra space when list starts a paragraph
 \item \textbf{Core Competency:} Web Service Development, Database Design, Cloud Native Architectures
 \item \textbf{Programming Languages:} Java, TypeScript, Python, C/\Cplusplus, R, SQL, Apex, XSLT/XQuery, Php
 \item \textbf{DevOps Toolchain:} Maven, Jenkins, Git, Svn, ant, make
 \item \textbf{Operating Systems:} GNU/Linux, Windows
-\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, Grails, Netbeans RCP, Symphony, ReactJS, AngularJS, JSF, Junit
+\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, Junit, Grails, ReactJS, AngularJS, NetBeans RCP, Symfony, JSF, JasperReports
 \item \textbf{Cloud Providers:} AWS, Salesforce, MS Azure
-\item \textbf{Databases:} ProgreSQL, Oracle, MySQL, eXist-db 
-\item \textbf{Applications and Tools:} Docker, JBoss, Tomcat, Apache, Netbeans, Eclipse, VsCode, MsOffice, VisualParadigm, Jira, Confluence, Joomla, Apache FOP, JMeter, \LaTeX
+\item \textbf{Databases:} PostgreSQL, Oracle, MySQL, eXist-db 
+\item \textbf{Applications and Tools:} Docker, JBoss, Tomcat, Apache, NetBeans, Eclipse, VS Code, MsOffice, VisualParadigm, Jira, Confluence, Joomla, Apache FOP, JMeter, \LaTeX
 \end{itemize}
 
 \needspace{10\baselineskip}
@@ -221,7 +227,7 @@ AirTies & \textit{Istambul, TR} \\
 \section{\bf Certifications}
 \begin{itemize}
 \item Safety Approval Services IEC 61508
-\item driving license B
+\item Driving License B
 %\item amateur radio license C
 \end{itemize}
 
@@ -235,70 +241,81 @@ AirTies & \textit{Istambul, TR} \\
 \resumeProject
 {Online Search App}{Panasonic Electric Works Europe AG}{Frontend Developer}{Ottobrunn, DE}{2024}
 {
-     \resumeSubItem Development of React Components
+     \resumeSubItem developed React Components for accessing RESTful APIs and JSON data manipulation
      \resumeSubItem \textit{TypeScript, ReactJS}
 }
 
 \resumeProject
-{Industrial IOT PaaS Application}{SH-Tools GmbH}{Software Architect/Developer}{Hannover, DE}{2019 -- 2022}
+{Industrial IOT Application}{SH-Tools GmbH}{Software Architect/Developer}{Hannover, DE}{2019 -- 2022}
 {
-	 \resumeSubItem upgrade of a legacy application into an event-driven architecture based on AWS 
-     \resumeSubItem design of RESTfull APIs and development of Web Services
-	 \resumeSubItem database design and query optimization
-     \resumeSubItem \textit{Java, Spring Boot, Grails, AWS, IOT, SQS, JMeter, SQL, postgreSQL, JPA, Python, MQTT}
+	\resumeSubItem developed a highly scalable, event-driven microservices architecture on AWS using infrastructure-as-code principles.
+	 \resumeSubItem upgraded an outdated monolith to a modern Platform-as-a-Service application  
+	 \resumeSubItem identified and eliminated database bottlenecks leading to dramatic performance improvements
+     \resumeSubItem designed and developed RESTful APIs
+     \resumeSubItem \textit{Java, Spring Boot, Grails, AWS, IOT, SQS, JMeter, SQL, PostgreSQL, JPA, Python, MQTT}
 }
 
 \resumeProject
-{Customer Relation Portal for real estate agents}{Wirtschaftshaus Service GmbH}{Software Developer}{Garbsen, DE}{2013 -- 2017}
+{Customer Relation Portal for real estate agents}{Wirtschaftshaus Service GmbH}{Senior Software Developer}{Garbsen, DE}{2013 -- 2017}
 {
-     \resumeSubItem development of Web and Mobile apps using Java technologies
-     \resumeSubItem integration of legacy applications with Salesforce CRM
-     \resumeSubItem customization of Salesforce with Apex
-     \resumeSubItem integration of components into SSO using SAML
+     \resumeSubItem Developed web apps and transformed a legacy JSF system into RESTful services with Salesforce CRM integration.  
+     \resumeSubItem was responsible for implementing and maintaining Salesforce Workflows with Apex
+     \resumeSubItem implemented Single-sign-on of components using SAML
      \resumeSubItem \textit{Java, Apex, JSF, Spring, Salesforce, SSQL, Jasper, WSO Carbon, SAML }
 }
 
 \resumeProject
-{AI Enabled Appointment Scheduling System}{Skagic GmbH}{Software Developer}{Hannover, DE}{2016 -- 2018}
+{AI Enabled Appointment Scheduling System}{Skagic GmbH}{Senior Software Developer}{Hannover, DE}{2016 -- 2018}
 {
-	 \resumeSubItem design of an event driven architecture using AWS Cloud
-     \resumeSubItem design and implementation of RESTfull APIs
-     \resumeSubItem setup of an federated authentication system
+	 \resumeSubItem designed an event driven architecture on the AWS Cloud using infrastructure-as-code principles.
+     \resumeSubItem created RESTful APIs with Spring Boot and federated authentication via OAuth2.
      \resumeSubItem \textit{Java, AWS, SQS, Google Calendar API, OAuth2}
 }
 
 \resumeProject
 {Web to Print Webapp}{Ricoh Europe}{Software Developer}{Hannover, DE}{2017 -- 2018}
 {
-     \resumeSubItem design and development RESTfull APIs
-	 \resumeSubItem implementation of XSLT transformations
+     \resumeSubItem designed and implemented a web-to-print application with XSLT-FO transformations for print media.
      \resumeSubItem \textit{Java, JSF, XSLT, XSLT-FO}
 }
 
 \resumeProject
 {Warehouse Management System}{Panasonic Electric Works Europe AG}{Software Developer}{Ottobrunn, DE}{2016 -- 2017}
 {
-     \resumeSubItem reverse engineering of legacy systems
-	 \resumeSubItem upgrade and integration of legacy software components
-     \resumeSubItem \textit{Java, SQL, Oracle}
+     \resumeSubItem reverse-engineered legacy java code in order to to implement new features and bug-fixes
+	 \resumeSubItem identified and eliminated major bugs
+     \resumeSubItem \textit{Java, JDBC, SQL, Oracle}
 }
 
+\resumeProject
+{Sensor Product Finder}{Panasonic Electric Works Europe AG}{Software Developer}{Ottobrunn, DE}{2014 -- 2015}
+{
+     \resumeSubItem implemented PDF generation functionality
+     \resumeSubItem \textit{Java, JasperReports}
+}
+
+\resumeProject
+{Job Exchange Portal}{Embassy of Belgium and Embassy of Netherlands}{Software Developer}{Budapest, HU}{2012}
+{
+    \resumeSubItem developed a Web application with social media integration using PHP and Symfony
+	 \resumeSubItem \textit{Php, Symfony}
+}
 
 \resumeProject
 {Event Management Portal}{Embasy of Belgium}{Software Developer}{Vienna, AT}{2011 -- 2020}
 {
-    \resumeSubItem development of Joomla Modules and Extensions
-	 \resumeSubItem integration of a Newsletter System
+    \resumeSubItem developed Joomla Modules and Extensions
+	 \resumeSubItem integrated a customized Newsletter System
 	 \resumeSubItem \textit{Php, Joomla}
- }
+}
 
 \resumeProject
 {ERP System for trading}{Aurifer Edelmetallrecycling}{Software Architect/Developer}{Vienna, AT}{2010 -- 2015}
 {
-     \resumeSubItem Desing of a Distributed Architecture based on Message Oriented Middleware
-	 \resumeSubItem Development of a Rich Client Application
-	 \resumeSubItem \textit{Java, Spring, netBeans RCP, JMS, JPA}
- }
+     \resumeSubItem designed a distributed Architecture based on Message Oriented Middleware using JMS
+	 \resumeSubItem developed a Rich Client Application based on the NetBeans Platform
+	 \resumeSubItem \textit{Java, Spring, Swing, NetBeans RCP, JMS, JPA}
+}
 
 \end{longtable}
 
@@ -309,7 +326,7 @@ AirTies & \textit{Istambul, TR} \\
 
 \begin{center}
 \vspace{\fill} \
-\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 11.03.2025$ $ }{\tiny \rm $ $Rev: 2.4$ $ }
+%\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 01.04.2025$ $ }{\tiny \rm $ $Rev: 2.5$ $ }
 \end{center}
 
 
