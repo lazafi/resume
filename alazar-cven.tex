@@ -117,13 +117,14 @@
 
 \newcommand{\resumeProject}[6]{
 %\needspace{10\baselineskip}
-\textbf{#3} & #5\\
+\textbf{#2} & \textit{#4}\\
 \nopagebreak
-#2& \textit{#4} \\
+#3&  \\
+#1& #5 \\
 \nopagebreak
 \multicolumn{2}{L{0.95\textwidth}}{
 \begin{itemize}[label=$\triangleright$]
-     \resumeItem #1
+ %    \resumeItem #1
 	#6
 \end{itemize} 
 } \\
@@ -166,7 +167,6 @@
 
 \section{\bf Education}
         	
-%		\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \vspace{-1em}
 \begin{longtable}{  L{0.70\textwidth}  R{0.25\textwidth}  R{0.05\textwidth }} 
 		\textbf{Technical University Vienna} &  \textit{Vienna, AT} \\
@@ -178,10 +178,10 @@
 		\textbf{Federal Commercial Academy} &  \textit{Kitzb\"{u}hel, AT} \\
 
 	High School Diploma & 1994 -- 2000 \\ 
-\vspace{1pt}\\
-		\textbf{Dienes Val\'{e}ria Primary School} &  \textit{Szeksz\'{a}rd, HU} \\
-
-	 & 1985 -- 1993 \\ 
+%\vspace{1pt}\\
+%		\textbf{Dienes Val\'{e}ria Primary School} &  \textit{Szeksz\'{a}rd, HU} \\
+%
+%	 & 1985 -- 1993 \\ 
 
 %\end{tabular*}
 \end{longtable}
@@ -208,35 +208,36 @@ AirTies & \textit{Istanbul, TR} \\
         \setlength{\itemsep}{0.2em}       % Space between items
         \setlength{\topsep}{5pt}         % Space before the list
         \setlength{\partopsep}{10pt}      % Extra space when list starts a paragraph
-\item \textbf{Core Competency:} Web Service Development, Database Design, Cloud Native Architectures
+\item \textbf{Core Competency:} Web Services, Database Design, Cloud Native Architectures, Internet Of Things
 \item \textbf{Programming Languages:} Java, TypeScript, Python, C/\Cplusplus, R, SQL, Apex, XSLT/XQuery, Php
 \item \textbf{DevOps Toolchain:} Maven, Jenkins, Git, Svn, ant, make
 \item \textbf{Operating Systems:} GNU/Linux, Windows
-\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, Junit, Grails, ReactJS, AngularJS, NetBeans RCP, Symfony, JSF, JasperReports
+\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, JSF, JMS, Junit, Grails, ReactJS, AngularJS, NetBeans RCP, Symfony, JasperReports
 \item \textbf{Cloud Providers:} AWS, Salesforce, MS Azure
 \item \textbf{Databases:} PostgreSQL, Oracle, MySQL, eXist-db 
 \item \textbf{Applications and Tools:} Docker, JBoss, Tomcat, Apache, NetBeans, Eclipse, VS Code, MsOffice, VisualParadigm, Jira, Confluence, Joomla, Apache FOP, JMeter, \LaTeX
+%\item \textbf{Academic Interests:} Data Science, Big Data  
 \end{itemize}
 
 \needspace{10\baselineskip}
 \section{\bf Other Skills}
 \begin{itemize}
-\item \textbf{Languages:} Hungarian(1), German(1), Slovak(1), English(2), Italian(4), Russian(5)
+\item \textbf{Languages:} Hungarian(C2), German(C2), Slovak(C2), English(C1), Italian(A2), Russian(A1)
 \end{itemize}
 
 \section{\bf Certifications}
 \begin{itemize}
-\item Safety Approval Services IEC 61508
+\item IEC 61508 Safety Approval Services by TÜV SÜD
 \item Driving License B
 %\item amateur radio license C
 \end{itemize}
-
+\clearpage
 %-------------------------%
 
 \section{\bf Project History}
-\vspace{-1em}
-\begin{longtable}{L{0.70\textwidth} R{0.25\textwidth} R{0.05\textwidth}} 
-%\begin{longtable}{|L{0.70\textwidth}| R{0.25\textwidth} |R{0.05\textwidth}|} 
+%\vspace{-1em}
+%\begin{longtable}{L{0.70\textwidth} R{0.25\textwidth} R{0.05\textwidth}} 
+\begin{longtable}{|L{0.70\textwidth}| R{0.25\textwidth} |R{0.05\textwidth}|} 
 
 \resumeProject
 {Online Search App}{Panasonic Electric Works Europe AG}{Frontend Developer}{Ottobrunn, DE}{2024}
@@ -249,10 +250,10 @@ AirTies & \textit{Istanbul, TR} \\
 {Industrial IOT Application}{SH-Tools GmbH}{Software Architect/Developer}{Hannover, DE}{2019 -- 2022}
 {
 	\resumeSubItem developed a highly scalable, event-driven microservices architecture on AWS using infrastructure-as-code principles.
-	 \resumeSubItem upgraded an outdated monolith to a modern Platform-as-a-Service application  
+	 \resumeSubItem upgraded an outdated monolith to a modern Platform-as-a-Service application.  
 	 \resumeSubItem identified and eliminated database bottlenecks leading to dramatic performance improvements
      \resumeSubItem designed and developed RESTful APIs
-     \resumeSubItem \textit{Java, Spring Boot, Grails, AWS, IOT, SQS, JMeter, SQL, PostgreSQL, JPA, Python, MQTT}
+     \resumeSubItem \textit{Java, Spring Boot, Grails, AWS, IoT, SQS, IaC, JMeter, SQL, PostgreSQL, JPA, Python, MQTT}
 }
 
 \resumeProject
@@ -261,7 +262,7 @@ AirTies & \textit{Istanbul, TR} \\
      \resumeSubItem Developed web apps and transformed a legacy JSF system into RESTful services with Salesforce CRM integration.  
      \resumeSubItem was responsible for implementing and maintaining Salesforce Workflows with Apex
      \resumeSubItem implemented Single-sign-on of components using SAML
-     \resumeSubItem \textit{Java, Apex, JSF, Spring, Salesforce, SSQL, Jasper, WSO Carbon, SAML }
+     \resumeSubItem \textit{Java, Apex, JSF, JPA, Spring, Salesforce, SSQL, Jasper, WSO Carbon, SAML }
 }
 
 \resumeProject
@@ -326,7 +327,7 @@ AirTies & \textit{Istanbul, TR} \\
 
 \begin{center}
 \vspace{\fill} \
-%\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 01.04.2025$ $ }{\tiny \rm $ $Rev: 2.5$ $ }
+%\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 01.04.2025$ $ }{\tiny \rm $ $Rev: 2.6$ $ }
 \end{center}
 
 
