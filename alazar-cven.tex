@@ -17,6 +17,7 @@
 %%\usepackage{fontawesome5}
 \input{glyphtounicode}
 \usepackage{longtable}
+\usepackage{ragged2e}
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -70,7 +71,7 @@
  %\setlist[itemize]{noitemsep} 
 %\setlength{\itemsep}{-30pt}
 %\setlength\topsep{0pt}
-\setitemize{itemsep=0.2em,topsep=-15pt}
+%\setitemize{itemsep=0.2em,topsep=-15pt}
 %setitemize{itemsep=3pt,topsep=0pt}
 
 %-------------------------
@@ -150,7 +151,7 @@
 
 \section{\bf Education}
         	
-\vspace{-1em}
+%\vspace{-1em}
 \begin{longtable}{  L{0.70\textwidth}  R{0.25\textwidth}  R{0.05\textwidth }} 
 		\textbf{Technical University Vienna} &  \textit{Vienna, AT} \\
 
@@ -158,7 +159,7 @@
 %	MaS, Internet Computing and Software Engeneering &  expected 2025 \\ 
 	Bsc, Internet Computing and Software Engineering & 2019 \\ 
 \vspace{1pt}\\
-		\textbf{Federal Commercial Academy} &  \textit{Kitzb\"{u}hel, AT} \\
+		\textbf{Handelsakademie} &  \textit{Kitzb\"{u}hel, AT} \\
 
 	High School Diploma & 1994 -- 2000 \\ 
 %\vspace{1pt}\\
@@ -172,13 +173,13 @@
 %-------------------------%
 
 \section{\bf Professional Experience}
-\vspace{-1em}
+%\vspace{-1em}
 \begin{longtable}{  L{0.70\textwidth}  R{0.25\textwidth}  R{0.05\textwidth }} 
-\textbf{Solution Engineer, Founder} & 2010 -- \\
+\textbf{Solution Engineer, Founder} & 2010 -- Present \\
 Labro OG & \textit{Vienna, AT} \\
 \vspace{1pt}\\
 \textbf{Research Assistant} & 2006 -- 2007\\
-Technical University Vienna & \textit{Vienna, AT} \\
+Technical University Vienna, Institute of Computer Technology & \textit{Vienna, AT} \\
 \vspace{1pt}\\
 \textbf{Internship} & 2006\\
 AirTies & \textit{Istanbul, TR} \\
@@ -186,26 +187,27 @@ AirTies & \textit{Istanbul, TR} \\
 \end{longtable}
 
 \section{\bf Technical Skills}
+%\justifying
+% {\Large I am an experienced \textbf{Software~Engineer} with focus on \textbf{Web~Services, Database~Design, Cloud~Native~Architectures, and Internet~Of~Things}}
+Highly experienced software engineer with expertise on \textbf{Web~Services}, \textbf{Database~Design}, \textbf{Cloud~Native~Architectures}, and the \textbf{Internet~Of~Things}
 \begin{itemize}
-       \setlength{\leftmargini}{0.5cm}    % Left margin
-        \setlength{\itemsep}{0.2em}       % Space between items
-        \setlength{\topsep}{5pt}         % Space before the list
-        \setlength{\partopsep}{10pt}      % Extra space when list starts a paragraph
-\item {\Large I am an experienced \textbf{Software~Engineer} with focus on \textbf{Web~Services, Database~Design, Cloud~Native~Architectures, and Internet~Of~Things}}
+ %      \setlength{\leftmargini}{1em}    % Left margin
+ %       \setlength{\itemsep}{0.2em}       % Space between items
+ %       \setlength{\topsep}{1em}         % Space before the list
+ %       \setlength{\partopsep}{10pt}      % Extra space when list starts a paragraph
 \item \textbf{Programming Languages:} Java, TypeScript, Python, C/\Cplusplus, R, SQL, Apex, XSLT/XQuery, Php
 \item \textbf{DevOps Toolchain:} Maven, Jenkins, Git, Svn, ant, make
-\item \textbf{Operating Systems:} GNU/Linux, Windows
-\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, JSF, JMS, Junit, Grails, ReactJS, AngularJS, NetBeans RCP, Symfony, JasperReports
-\item \textbf{Cloud Providers:} AWS, Salesforce, MS Azure
-\item \textbf{Databases:} PostgreSQL, Oracle, MySQL, eXist-db 
-\item \textbf{Applications and Tools:} Docker, JBoss, Tomcat, Apache, NetBeans, Eclipse, VS Code, MsOffice, VisualParadigm, Jira, Confluence, Joomla, Apache FOP, JMeter, \LaTeX
+\item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, JSF, JMS, Junit, Grails, ReactJS, AngularJS, Symfony
+\item \textbf{Databases \& Cloud Providers:}  PostgreSQL, Oracle, MySQL, eXist-db, AWS, Salesforce, MS Azure
+\item \textbf{Operating Systems \& Applications:}  GNU/Linux, Windows, Docker, JBoss, Tomcat, Apache, NetBeans, Eclipse, VS Code, MsOffice, VisualParadigm, Jira, Confluence, Joomla, JasperReports, Apache FOP, JMeter, \LaTeX
 %\item \textbf{Academic Interests:} Data Science, Big Data  
 \end{itemize}
 
 \needspace{10\baselineskip}
 \section{\bf Other Skills}
 \begin{itemize}
-\item \textbf{Languages:} Hungarian(C2), German(C2), Slovak(C2), English(C1), Italian(A2), Russian(A1)
+\item \textbf{Language proficiency:} Hungarian(C2), German(C2), Slovak(C2), English(C1), Italian(A2), Russian(A1)
+%\item \textbf{Sailing:} Coastal Master, Offshore Master, LRC
 \end{itemize}
 
 \section{\bf Certifications}
@@ -258,11 +260,11 @@ AirTies & \textit{Istanbul, TR} \\
 {Warehouse Management System}{Software Developer}{2016 -- 2017}
 {
      \resumeSubItem reverse-engineered legacy java code in order to to implement new features and bug-fixes
-	 \resumeSubItem identified and eliminated major bugs
+%	 \resumeSubItem identified and eliminated bugs
      \resumeSubItem \textit{Java, JDBC, SQL, Oracle}
 }
 \resumeProjectt
-{Sensor Product Finder}{Software Developer}{2014 -- 2015}
+{Online Product Catalog}{Software Developer}{2014 -- 2015}
 {
      \resumeSubItem implemented PDF generation functionality
      \resumeSubItem \textit{Java, JasperReports}
