@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[11pt,a4paper,oneside]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -16,8 +16,10 @@
 \usepackage{float}
 %%\usepackage{fontawesome5}
 \input{glyphtounicode}
+\usepackage{needspace}
 \usepackage{longtable}
 \usepackage{ragged2e}
+\usepackage{changepage}
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -29,14 +31,11 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot[R]{\tiny\thepage /\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-\usepackage{needspace}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -64,7 +63,7 @@
 
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\setlength\LTleft{1em}
+\setlength\LTleft{1.5em}
 \setlength\LTright{0em}
 
 % itemize
@@ -132,7 +131,7 @@
 % Document Specific Customizations
 
 % Make lists without bullets and with no indentation
-\setlength{\leftmargini}{2em}
+\setlength{\leftmargini}{1.5em}
 \renewcommand{\labelitemi}{}
 
 % Use large bold font for printed name at top of pages
@@ -189,12 +188,11 @@ AirTies & \textit{Istanbul, TR} \\
 \section{\bf Technical Skills}
 %\justifying
 % {\Large I am an experienced \textbf{Software~Engineer} with focus on \textbf{Web~Services, Database~Design, Cloud~Native~Architectures, and Internet~Of~Things}}
-Highly experienced software engineer with expertise on \textbf{Web~Services}, \textbf{Database~Design}, \textbf{Cloud~Native~Architectures}, and the \textbf{Internet~Of~Things}
-\begin{itemize}
- %      \setlength{\leftmargini}{1em}    % Left margin
- %       \setlength{\itemsep}{0.2em}       % Space between items
- %       \setlength{\topsep}{1em}         % Space before the list
- %       \setlength{\partopsep}{10pt}      % Extra space when list starts a paragraph
+%Experienced software engineer with expertise on \textbf{Web~Services}, \textbf{Database~Design} and Optimization, \textbf{Cloud~Native~Architectures}, and the \textbf{Internet~Of~Things}
+\begin{adjustwidth}{1.5em}{2em}
+I am an experienced Software Engineer specializing in designing and developing scalable, event-driven microservice architectures on cloud platforms, with a focus on  \textbf{Web Services, Database Design}, and  \textbf{Internet of Things} applications. 
+
+\begin{itemize}[leftmargin=0em]
 \item \textbf{Programming Languages:} Java, TypeScript, Python, C/\Cplusplus, R, SQL, Apex, XSLT/XQuery, Php
 \item \textbf{DevOps Toolchain:} Maven, Jenkins, Git, Svn, ant, make
 \item \textbf{Frameworks:} Spring, J2EE, Hibernate/JPA, JSF, JMS, Junit, Grails, ReactJS, AngularJS, Symfony
@@ -202,11 +200,11 @@ Highly experienced software engineer with expertise on \textbf{Web~Services}, \t
 \item \textbf{Operating Systems \& Applications:}  GNU/Linux, Windows, Docker, JBoss, Tomcat, Apache, NetBeans, Eclipse, VS Code, MsOffice, VisualParadigm, Jira, Confluence, Joomla, JasperReports, Apache FOP, JMeter, \LaTeX
 %\item \textbf{Academic Interests:} Data Science, Big Data  
 \end{itemize}
-
+\end{adjustwidth}
 \needspace{10\baselineskip}
 \section{\bf Other Skills}
 \begin{itemize}
-\item \textbf{Language proficiency:} Hungarian(C2), German(C2), Slovak(C2), English(C1), Italian(A2), Russian(A1)
+\item \textbf{Language proficiency:} Hungarian(C2), German(C2), Slovak(C2), English(C1), Italian(A1)
 %\item \textbf{Sailing:} Coastal Master, Offshore Master, LRC
 \end{itemize}
 
@@ -321,7 +319,7 @@ Highly experienced software engineer with expertise on \textbf{Web~Services}, \t
 
 \begin{center}
 \vspace{\fill} \
-%\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 01.04.2025$ $ }{\tiny \rm $ $Rev: 2.7$ $ }
+%\newline{\tiny \rm $ $ cv $ $ }{\tiny \rm $ $: 01.04.2025$ $ }{\tiny \rm $ $Rev: 2.8$ $ }
 \end{center}
 
 
